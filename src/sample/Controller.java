@@ -36,6 +36,7 @@ public class Controller implements Initializable {
 
                 }
                 );
+        //To add new employees to the list
         ObservableList<Employee> items = employeeListView.getItems();
         Employee employee1 = new Employee();
         Employee employee2 = new Employee();
@@ -55,6 +56,8 @@ public class Controller implements Initializable {
             items.add(employee);
 
         }
+
+        //To add new staff to the list
         Staff staff1 = new Staff();
         staff1.firstName = "StaffPerson";
         staff1.lastName = "GoodWorker";
