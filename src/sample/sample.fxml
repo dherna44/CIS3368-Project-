@@ -16,7 +16,7 @@
       <VBox prefHeight="387.0" prefWidth="145.0">
          <children>
             <ListView fx:id="employeeListView" prefHeight="387.0" prefWidth="152.0" />
-            <Button mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="25.0" prefWidth="145.0" text="Remove Selected" textFill="#f20404" />
+            <Button mnemonicParsing="false" onAction="#removeButtonClicked" prefHeight="25.0" prefWidth="145.0" text="Remove Selected" textFill="#f20404" />
          </children>
       </VBox>
       <VBox fx:id="firstNameTextField" prefHeight="387.0" prefWidth="240.0">
@@ -35,14 +35,8 @@
             </HBox>
             <HBox>
                <children>
-                  <Label prefWidth="100" text="Is Active" />
+                  <Label prefWidth="100" text="Is Active:" />
                   <CheckBox fx:id="isActiveCheckBox" />
-               </children>
-            </HBox>
-            <HBox>
-               <children>
-                  <Label prefWidth="100" text="Misc." />
-                  <TextField prefWidth="150" />
                </children>
             </HBox>
             <HBox prefHeight="100.0" prefWidth="200.0">

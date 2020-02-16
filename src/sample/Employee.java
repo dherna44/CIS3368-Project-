@@ -8,6 +8,7 @@ public class Employee implements Worker {
     public UUID id;
     public boolean isActive;
 
+
     public Employee() {
 
     }

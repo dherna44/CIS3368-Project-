@@ -107,13 +107,27 @@ public class Controller implements Initializable {
 
     }
 
-    //Clears any input currently in the text fields:
+    //Clears any input currently in the text fields and check box:
     public void clearButtonClicked(){
+        firstNameTexField.setText(" ");
+        lastNameTextField.setText(" ");
+        isActiveCheckBox.setSelected(false);
+
 
     }
 
     //Deletes employee selected by user:
-    public void deleteButtonClicked(){
+    public void removeButtonClicked(){
+        ObservableList<Employee> selectedEmployee, allEmployees;
+        allEmployees = employeeListView.getItems();
+
+        //Gets the employee that was selected:
+        selectedEmployee = employeeListView.getSelectionModel().getSelectedItems();
+
+        //For Loop that checks employee list for selected employees and deletes them from the list:
+        for(Employee employee: selectedEmployee){
+            allEmployees.remove(employee);
+        }
 
     }
 }
