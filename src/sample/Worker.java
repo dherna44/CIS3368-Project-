@@ -1,7 +1,6 @@
 package sample;
 
-public class Worker {
+public interface Worker {
     public void hire();
-
     public void fire();
 }
